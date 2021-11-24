@@ -15,10 +15,11 @@ module.exports = {
         }
         return new HDWalletProvider(
             privateKeyDev,
-            'http://localhost:9933/'
+            process.env.HOST
         );
       },
-      network_id: 2160,
+      network_id: 111121,
+      // network_id: 42,
     }
   },
   compilers: {
